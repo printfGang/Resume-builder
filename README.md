@@ -1,5 +1,5 @@
 ## CV APP
- - Live: https://cv-app-khaki.vercel.app/
+ - Live: 
 
 ## :cd: How to run local
 
