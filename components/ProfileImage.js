@@ -2,7 +2,7 @@ import React, { memo, useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { useTranslation } from 'next-i18next'
 
-import { CameraIcon } from '../components/svgs'
+// import { CameraIcon } from '../components/svgs'
 
 function ProfileImage({ ...props }) {
   const { t } = useTranslation('common')
@@ -51,7 +51,7 @@ function ProfileImage({ ...props }) {
           className='image-hover'
           style={{ opacity: `${!preview ? 1 : ''}` }}
         >
-          <CameraIcon />
+          {/* <CameraIcon /> */}
           {t('select-picture')}
         </div>
       </label>

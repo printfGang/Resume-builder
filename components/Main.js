@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { useTranslation } from 'next-i18next'
 
 import ProfileImage from './ProfileImage'
-import { MailIcon, PhoneIcon } from './svgs'
+// import { MailIcon, PhoneIcon } from './svgs'
 import Text from './Text'
 
 function Main({ ...props }) {
@@ -51,11 +51,11 @@ function Main({ ...props }) {
           <div className='profile__box'>
             <Text title>{t('contant')}</Text>
             <div className='profile__logo-box'>
-              <MailIcon />
+              {/* <MailIcon /> */}
               <Text placeholder={t('enter-email')} />
             </div>
             <div className='profile__logo-box'>
-              <PhoneIcon />
+              {/* <PhoneIcon /> */}
               <Text placeholder={t('enter-phone')} />
             </div>
           </div>

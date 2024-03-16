@@ -3,13 +3,6 @@ import styled from 'styled-components'
 
 import Dropdown from './Dropdown'
 
-import {
-  DownIcon,
-  PaletteIcon,
-  TextDocumentIcon,
-  FontSizeIcon,
-  EarthIcon,
-} from './svgs'
 import { colors, fontSizes, fonts } from '../constants'
 
 import { useGlobalContext } from '../context'
@@ -19,31 +12,7 @@ function Header({ handlePrint }) {
     useGlobalContext()
   return (
     <Wrapper>
-      <button className='btn' onClick={handlePrint}>
-        <DownIcon />
-      </button>
-      <button className='btn' onClick={changeLanguage}>
-        <EarthIcon />
-        {language === 'en' ? 'Tr' : 'En'}
-      </button>
-
-      <Dropdown
-        color
-        icon={<PaletteIcon />}
-        menus={colors}
-        handler={handleColor}
-      />
-
-      <Dropdown
-        icon={<TextDocumentIcon />}
-        menus={fonts}
-        handler={handleFont}
-      />
-      <Dropdown
-        icon={<FontSizeIcon />}
-        menus={fontSizes}
-        handler={handleFontSize}
-      />
+      <button onClick={handlePrint} className="btn"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"></path></svg></button>
     </Wrapper>
   )
 }
